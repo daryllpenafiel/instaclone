@@ -1,0 +1,22 @@
+.prof-pic {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.prof-pic-area {
+    margin: auto;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.handle {
+    font-size: 2.3rem;
+    font-weight: 200;
+}
+
+.fullname {
+    font-size: 1.4rem;
+}
