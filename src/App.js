@@ -2,9 +2,15 @@ import React, { Component } from 'react';
 import Navbar from "./Components/Navbar";
 import Userline from "./Components/Userline";
 import Imagecard from "./Components/Imagecard";
+import images from "./picturelist.json";
 import "./App.css";
 
 class App extends Component {
+
+  state = {
+    images
+  };
+
   render() {
     return (
       <div className="App">
@@ -15,29 +21,12 @@ class App extends Component {
                 <Userline image="./images/dp1.jpg" handle="darylltheexplorer" fullname="Daryll Penafiel" posts="200" followers="653" following="598"/>
                 
                 <div className="row">
+                {this.state.images.map(image => (
                   <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/iceland.PNG" name="Blue Lagoon"></Imagecard>
+                  <Imagecard image={image.image} name={image.name}></Imagecard>
                   </div>
-                  <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/paris.PNG" name="Paris"></Imagecard>
-                  </div>
-                  <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/couch.PNG" name="Couch"></Imagecard>
-                  </div>
-                </div>            
-
-                <div className="row">
-                  <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/japan.PNG" name="Japan"></Imagecard>
-                  </div>
-                  <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/amsterdam.PNG" name="Amsterdam"></Imagecard>
-                  </div>
-                  <div className="col-12 col-sm-6 col-md-4">
-                    <Imagecard image="./images/books.PNG" name="Books"></Imagecard>
-                  </div>
+                  ))}
                 </div>
-                             
               </div>
              </div>
           </div>

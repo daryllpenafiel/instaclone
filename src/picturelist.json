@@ -1,0 +1,54 @@
+[{
+    "id": 1,
+    "name": "Iceland",
+    "image": "./images/iceland.PNG",
+    "likes": 23
+},
+{
+    "id": 2,
+    "name": "Paris",
+    "image": "./images/paris.PNG",
+    "likes": 23
+},
+{
+    "id": 3,
+    "name": "Couch",
+    "image": "./images/couch.PNG",
+    "likes": 23
+},
+{
+    "id": 4,
+    "name": "Japan",
+    "image": "./images/japan.PNG",
+    "likes": 23
+},
+{
+    "id": 5,
+    "name": "Amsterdam",
+    "image": "./images/amsterdam.PNG",
+    "likes": 23
+},
+{
+    "id": 6,
+    "name": "Books",
+    "image": "./images/books.PNG",
+    "likes": 23
+},
+{
+    "id": 7,
+    "name": "Pulag",
+    "image": "./images/pulag.PNG",
+    "likes": 23
+},
+{
+    "id": 8,
+    "name": "Vietnam",
+    "image": "./images/vietnam.PNG",
+    "likes": 23
+},
+{
+    "id": 9,
+    "name": "Bangkok",
+    "image": "./images/bangkok.PNG",
+    "likes": 23
+}]
