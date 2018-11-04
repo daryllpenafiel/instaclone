@@ -14,7 +14,7 @@ const Userline = props => (
             </div>
 
             <div class="row mb-3">
-                <div className="col-md-3"><span className="bold">{props.posts}</span> Posts</div>
+                <div className="col-md-3"><span className="bold">{props.posts}</span> Posts </div>
                 <div className="col-md-3"><span className="bold">{props.followers}</span> Followers</div>
                 <div className="col-md-3"><span className="bold">{props.following}</span> Following</div>
             </div>

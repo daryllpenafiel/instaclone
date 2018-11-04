@@ -8,8 +8,19 @@ import "./App.css";
 class App extends Component {
 
   state = {
-    images
+    images,
+    isHovered: false
   };
+
+  hoverImage = id => {
+    this.state.images.find((o, i) => {
+      if (o.id === id) {
+          this.setState({isHovered: true}, function(){
+            console.log("hover");
+          });
+      }
+    });
+  }
 
   render() {
     return (
@@ -23,7 +34,10 @@ class App extends Component {
                 <div className="row">
                 {this.state.images.map(image => (
                   <div className="col-12 col-sm-6 col-md-4">
-                  <Imagecard image={image.image} name={image.name}></Imagecard>
+                  <Imagecard image={image.image} name={image.name} likes={image.likes}
+                    onMouseOut={() => this.setState({hovered: true})}
+                    onMouseOver={() => this.setState({hovered: false})}>
+                  </Imagecard>
                   </div>
                   ))}
                 </div>
